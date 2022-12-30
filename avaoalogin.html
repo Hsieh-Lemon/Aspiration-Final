@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <title>Aspiration-LOGIN</title>
+        <link rel="icon" type="img/x-icon" href="img/前端logo_one.png">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/loginstyle.css">
+        <link rel="stylesheet" href="css/loading.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div class="loading-wrapper">
+            <div class="cssload-spinner"></div>
+        </div>
+        
+        <div class="logo">
+            <a href="index.html"><img class="logo_img" src="img/前端logo.png" alt="logo"/></a>
+        </div>
+        <div class="login_page">
+             <div class="left">
+                <img class="left_gif" src="img/candle-light.gif" alt="gif"/>
+            </div>
+            <div class="right">
+                <div class="login_title">LOGIN</div>
+                <form>
+                    <label>
+                        <p class="account">Account</p>
+                        <input class="input_label" type="text" name="Account">
+                    </label>
+                    <label>
+                        <p class="password">Password</p>
+                        <input class="input_label" type="text" name="Password">
+                    </label>
+                        <a class="forgot_password" href="#">Forgot password?</a>
+                        <input class="submit_LOGIN" type="submit" value="LOGIN">
+                </form>
+                <div class="other_area">
+                    <div class="or">or</div>
+                    <div class="social_media">
+                        <a href="https://www.instagram.com/" target="_blank"><img class="media-icon" src="img/instagram_login2.png" alt="ig"/></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="media-icon" src="img/facebook_login2.png" alt="fb"/></a>
+                        <a href="https://twitter.com/?lang=zh-Hant" target="_blank"><img class="media-icon" src="img/twitter_login2.png" alt="tw"/></a>
+                    </div>
+                    <a  class="sign_in" href="#">sign in</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                $(".loading-wrapper").fadeOut(1000);
+            },1000);
+        });
+    </script>
+    </body>
+</html>
